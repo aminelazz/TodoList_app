@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    .header_nav_max_768px {
+        @apply text-transparent;
+    }
+}
+
+@layer components {
+    .header_nav_min_768px {
+        @apply text-white mr-12 flex flex-row items-center gap-x-12;
+    }
+}
