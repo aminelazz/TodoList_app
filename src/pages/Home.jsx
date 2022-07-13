@@ -11,7 +11,7 @@ function Home() {
                     <span className="font-titillium_web text-2xl font-bold">
                         Welcome to Todo List
                     </span>
-                    <span className="font-dosis text-2xl font-thin">
+                    <span className="px-4 font-dosis text-2xl font-thin">
                         <Link
                             to="/login"
                             className="text-primary_color font-bold"

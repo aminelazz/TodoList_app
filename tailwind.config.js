@@ -14,8 +14,8 @@ module.exports = {
                 titillium_web: ["Titillium Web", "sans-serif"]
             },
             backgroundImage: {
-                bg_light: "url('../public/Meteor.svg')",
-                bg_dark: "url('../public/Meteor_dark.svg')"
+                bg_light: "url('/public/Meteor.svg')",
+                bg_dark: "url('/public/Meteor_dark.svg')"
             }
         }
     },
