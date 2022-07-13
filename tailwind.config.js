@@ -9,7 +9,13 @@ module.exports = {
                 third_color: "#191516"
             },
             fontFamily: {
-                dosis: "Dosis"
+                dosis_bold: ["Dosis Bold", "sans-serif"],
+                dosis: ["Dosis Regular", "sans-serif"],
+                titillium_web: ["Titillium Web", "sans-serif"]
+            },
+            backgroundImage: {
+                bg_light: "url('../public/Meteor.svg')",
+                bg_dark: "url('../public/Meteor_dark.svg')"
             }
         }
     },

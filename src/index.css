@@ -2,6 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+    font-family: "Dosis Bold";
+    src: url("/src/fonts/Dosis-Bold.ttf");
+}
+
+@font-face {
+    font-family: "Dosis Regular";
+    src: url("/src/fonts/Dosis-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Titillium Web";
+    src: url(/src/fonts/TitilliumWeb-Regular.ttf);
+}
+
 @layer base {
     .header_nav_max_768px {
         @apply text-transparent;
@@ -12,4 +27,9 @@
     .header_nav_min_768px {
         @apply text-white mr-12 flex flex-row items-center gap-x-12;
     }
+}
+
+body {
+    background-image: url(../public/Meteor.svg);
+    background-attachment: fixed;
 }
