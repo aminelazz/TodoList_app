@@ -1,11 +1,22 @@
-import Header from "../components/Header"
 import logo from "../logo.png"
 import { Link } from "react-router-dom"
+import { useEffect } from "react"
 
-function Home() {
+const setPage = {
+    home: true,
+    about: false,
+    login: false,
+    register: false
+}
+
+function Home(props) {
+    useEffect(() => {
+        props.setnavPage(setPage)
+    }, [])
+
     return (
         <>
-            <Header page="Home" />
+            {/* <Header page="Home" /> */}
             <div className="mt-10 md:mt-[5%] flex flex-col md:flex-row justify-evenly">
                 <div className="text-center flex flex-col justify-center gap-y-8">
                     <span className="font-titillium_web text-2xl font-bold">
@@ -34,3 +45,5 @@ function Home() {
 }
 
 export default Home
+
+export const home = "Home"

@@ -17,7 +17,8 @@
     src: url(/src/fonts/TitilliumWeb-Regular.ttf);
 }
 
-body {
+/* body {
     background-image: url(../public/Meteor.svg);
     background-attachment: fixed;
-}
+    background-color: #c9daea;
+} */

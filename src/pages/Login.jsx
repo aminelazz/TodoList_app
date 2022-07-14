@@ -1,13 +1,26 @@
 import React from "react"
-import Header from "../components/Header"
+import { useEffect } from "react"
 
-function Login() {
+const setPage = {
+    home: false,
+    about: false,
+    login: true,
+    register: false
+}
+
+function Login(props) {
+    useEffect(() => {
+        props.setnavPage(setPage)
+    }, [])
+
     return (
         <>
-            <Header page="Login" />
+            {/* <Header page="Login" /> */}
             <div>Login</div>
         </>
     )
 }
 
 export default Login
+
+export const login = "Login"

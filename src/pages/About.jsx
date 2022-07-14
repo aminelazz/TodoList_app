@@ -1,10 +1,20 @@
 import React from "react"
-import Header from "../components/Header"
+import { useEffect } from "react"
 
-function About() {
+const setPage = {
+    home: false,
+    about: true,
+    login: false,
+    register: false
+}
+
+function About(props) {
+    useEffect(() => {
+        props.setnavPage(setPage)
+    }, [])
+
     return (
         <>
-            <Header page="About" />
             <div>About</div>
         </>
     )
