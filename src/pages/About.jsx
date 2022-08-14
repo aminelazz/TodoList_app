@@ -1,21 +1,11 @@
 import React from "react"
-import { useEffect } from "react"
 
-const setPage = {
-    home: false,
-    about: true,
-    login: false,
-    register: false
-}
-
-function About(props) {
-    useEffect(() => {
-        props.setnavPage(setPage)
-    }, [])
-
+function About() {
     return (
         <>
-            <div>About</div>
+            <div className="dark:text-white transition-all duration-300">
+                About
+            </div>
         </>
     )
 }

@@ -1,22 +1,12 @@
 import React from "react"
-import { useEffect } from "react"
 
-const setPage = {
-    home: false,
-    about: false,
-    login: true,
-    register: false
-}
-
-function Login(props) {
-    useEffect(() => {
-        props.setnavPage(setPage)
-    }, [])
-
+function Login() {
     return (
         <>
             {/* <Header page="Login" /> */}
-            <div>Login</div>
+            <div className="dark:text-white transition-all duration-300">
+                Login
+            </div>
         </>
     )
 }
